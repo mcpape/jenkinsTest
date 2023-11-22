@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                echo 'Hallo Test'
+                echo "Hallo Test"
+                bat "mvn -v"
             }
         }
     }
